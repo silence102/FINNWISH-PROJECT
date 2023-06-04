@@ -1,0 +1,49 @@
+1. Flask 문서 
+- Flask 기능, API, 패턴 등 설명과 예제 참조
+    https://flask.palletsprojects.com
+
+2. 라우팅(Route) 패턴 
+- Flask에서 URL을 처리하기 위해 라우팅 패턴 사용
+
+3. 템플릿(template) 
+- Flask에서 템플릿 엔진을 사용하여 동적인 웹 페이지 생성
+    HTML과 Python 코드를 조합
+    Flask에서 기본으로 제공하는 Jinja 템플릿 엔진 사용
+
+4. 요청(Request)과 응답(Response) 
+- Flask 애플리케이션은 클라이언트로 부터 요청 받고 그에 따른 응답을 반환
+
+5. 확장(Extension)
+
+6. 보안 
+- 사용자 인증, 인가, 쿠키/세션 관리 등
+
+7. 배포(Deployment)
+- WSGI 서버, Nginx, Apache
+- 웹 서버 연동, 환경 설정, 보안 설정 등 고려
+
+
+
+    2. 라우팅(Route)
+    - URL 경로에 따라 함수가 실행되도록 하는 결정 메커니즘
+    - @app.route() 데코레이터
+
+    2-1 기본 라우팅
+    @app.route('/')
+    def home():
+        return 'Hello, Flask!'
+
+    2-2 변수 라우팅 - 동적인 경로
+    @app.route('/user/<username>')
+        def profile(username):
+            return f'Profile page of {username}'
+
+    2-3 HTTP 메소드 지정
+    - Flask는 HTTP 메소드(GET,POST,PUT,DELETE 등)에 따라 다른 함수 실행
+    - methods 매개변수 사용하여 특정 HTTP 메소드에 대한 요청을 처리할 함수를 지정
+    @app.route('/login', methods=['GET', 'POST'])
+    def login():
+        if request.method == 'POST':
+            # 로그인 처리
+        else:
+            # 로그인 페이지 표시
