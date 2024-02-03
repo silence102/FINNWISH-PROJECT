@@ -6,6 +6,7 @@
 	금융을 뜻하는 FINANCE와 소망을 뜻하는 WISH를 합친,<br>
 	청소년들이 금융 교육을 통해 각자의 경제적 목표를 달성할 수 있도록 도와주는 학습친구 FINNWISH입니다!<br>
 	저희 앱은 이론 공부와 금융 활동 경험을 병행할 수 있도록 제작된 참여유도형 앱입니다.<br>
+	<a href = "https://github.com/finn-wish-final-project/final-project"> [FINNWISH TEAM PROJECT LINK - 바로가기] </a>
 	</h5>
 	
 	
